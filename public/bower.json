@@ -1,0 +1,19 @@
+{
+  "name": "public",
+  "version": "0.0.1",
+  "description": "IntertechWebapp",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#~0.97.6"
+  }
+}
