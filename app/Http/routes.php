@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => ['web', 'auth']], function () {
+    Route::get('/', 'HomeController@index');
 });
 
 Route::group(['prefix' => 'auth', 'middleware' => 'guest'], function () {

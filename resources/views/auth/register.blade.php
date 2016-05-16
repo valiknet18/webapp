@@ -1,9 +1,5 @@
 @extends('layout')
 
-@section('header-class')
-    big-header waves-effect waves-light
-@endsection
-
 @section('content')
     <div class="row">
         <div class="col s12 m10 offset-m1">
@@ -45,7 +41,7 @@
                         {!! csrf_field() !!}
                     </div>
                     <div class="card-action">
-                        <button type="submit" class="waves-effect waves-light light-blue btn">Registration</button>
+                        <button type="submit" class="waves-effect waves-light darken-custom btn">Registration</button>
                     </div>
                 </form>
             </div>

@@ -1,2 +1,108 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "public/bower_components/Materialize/sass/materialize.scss";
 
+$font-family: 'Roboto', sans-serif;
+$background-color: #151515;
+$text-color: #151515;
+$text-valid-color: #3eaa0e;
+$text-invalid-color: #e00600;
+
+.darken-custom {
+  @extend .grey, .darken-4;
+
+  background-color: $background-color !important;
+}
+
+.big-header {
+  height: 400px;
+  margin-bottom: -200px;
+  z-index: 0;
+}
+
+nav {
+  .logo {
+    width: 30%;
+    margin-top: -35px;
+    margin-left: -50px;
+  }
+
+  .small-header {
+    height: 100px;
+  }
+
+  height: 120px;
+}
+
+nav {
+  ul {
+    li {
+      a {
+        font-weight: 500;
+        font-family: $font-family;
+        text-transform: uppercase;
+
+      }
+    }
+  }
+}
+
+.side-nav {
+  li {
+    width: 100%;
+
+    img {
+      width: inherit;
+    }
+  }
+}
+
+/* label color */
+.input-field {
+  label {
+    color: #000;
+  }
+
+  input[type=text]:focus + label, input[type=password]:focus + label {
+    color: $text-color;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 1px solid $text-color;
+    box-shadow: 0 1px 0 0 $text-color;
+  }
+
+  input[type=text].valid, input[type=password].valid {
+    border-bottom: 1px solid $text-valid-color;
+    box-shadow: 0 1px 0 0 $text-valid-color;
+  }
+
+  input[type=text]:focus.invalid + label, input[type=password]:focus.invalid + label {
+    color: $text-valid-color;
+  }
+
+  input[type=text].invalid, input[type=password].invalid {
+    border-bottom: 1px solid $text-invalid-color;
+    box-shadow: 0 1px 0 0 $text-invalid-color;
+  }
+
+  input[type=text]:focus.invalid + label, input[type=password]:focus.invalid + label {
+    color: $text-invalid-color;
+  }
+
+  /* icon prefix focus color */
+  .prefix.active {
+    color: #000;
+  }
+
+  label {
+    width: 100%;
+  }
+}
+
+.side-nav__logo {
+   width: 60%;
+}
+
+.card__dashboard {
+  margin-top: 70px;
+}
