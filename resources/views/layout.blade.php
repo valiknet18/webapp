@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="{{ asset('bower_components/Materialize/dist/css/materialize.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('bower_components/mdi/css/materialdesignicons.min.css') }}" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet" />
 

@@ -5,11 +5,11 @@
     <a href="#">Dashboard</a>
 </li>
 <li>
-    <a href="#">Articles</a>
+    <a href="{{ action('ArticlesController@index') }}">Articles</a>
 </li>
 <li>
-    <a href="#">Users</a>
+    <a href=" {{ action('UsersController@index')  }} ">Users</a>
 </li>
 <li>
-    <a href=#">Projects</a>
+    <a href=" {{ action('ProjectsController@index') }}">Projects</a>
 </li>

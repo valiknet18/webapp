@@ -13,6 +13,18 @@
 
 Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get('/', 'HomeController@index');
+
+    Route::group(['prefix' => 'articles'], function () {
+        Route::get('/', 'ArticlesController@index');
+    });
+
+    Route::group(['prefix' => 'users'], function () {
+        Route::get('/', 'UsersController@index');
+    });
+
+    Route::group(['prefix' => 'projects'], function () {
+        Route::get('/', 'ProjectsController@index');
+    });
 });
 
 Route::group(['prefix' => 'auth', 'middleware' => 'guest'], function () {

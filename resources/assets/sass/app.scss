@@ -13,6 +13,12 @@ $text-invalid-color: #e00600;
   background-color: $background-color !important;
 }
 
+.darken-custom-text {
+  @extend .grey-text, .text-darken-4;
+
+  color: $background-color !important;
+}
+
 .big-header {
   height: 400px;
   margin-bottom: -200px;
@@ -54,6 +60,18 @@ nav {
       width: inherit;
     }
   }
+}
+
+.collapsible {
+   .collapsible-header {
+      .small-image {
+         width: 50px
+      }
+
+     .avatar {
+        margin-top: 20px;
+     }
+   }
 }
 
 /* label color */
